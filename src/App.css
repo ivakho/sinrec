@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-circle-1: #0ff;
+    --color-circle-2: orchid;
+    --color-circle-3: #7cfc00;
+    --color-schematic-circle: lawngreen;
+
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    --timing: 10s;
+    color-scheme: light;
+    color: #ffffffde;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+#root {
+    width: 100%;
+    height: 100vh;
+
+    margin: 0 auto;
+    padding: 10px 15%;
+}

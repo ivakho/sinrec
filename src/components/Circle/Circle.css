@@ -1,0 +1,132 @@
+.circle {
+    position: absolute;
+
+    width: 25px;
+    height: 25px;
+
+    font-size: 16px;
+
+    border-radius: 50%;
+    cursor: pointer;
+    animation: shadow var(--timing) linear;
+}
+
+@keyframes shadow {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.circle::before {
+    position: absolute;
+
+    left: -1px;
+    top: -1px;
+
+    width: 100%;
+    height: 100%;
+
+    content: "";
+    border: 1px dashed white;
+    border-radius: 50%;
+    animation: round2 7s 3s linear;
+}
+
+@keyframes round2 {
+    0% {
+        left: -1px;
+        top: -1px;
+
+        width: 100%;
+        height: 100%;
+
+        opacity: 1;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        left: -50%;
+        top: -50%;
+
+        width: 200%;
+        height: 200%;
+
+        opacity: 0;
+    }
+}
+
+.circle::after {
+    position: absolute;
+
+    left: -1px;
+    top: -1px;
+
+    width: 100%;
+    height: 100%;
+
+    content: "";
+    border: 1px dashed white;
+    border-radius: 50%;
+    animation: round 9s 1s linear;
+}
+
+@keyframes round {
+    0% {
+        left: -1px;
+        top: -1px;
+
+        width: 100%;
+        height: 100%;
+
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        left: -100%;
+        top: -100%;
+
+        width: 300%;
+        height: 300%;
+
+        opacity: 0;
+    }
+}
+
+.circle-1 {
+    background-color: var(--color-circle-1);
+}
+
+.circle-2 {
+    background-color: var(--color-circle-2);
+}
+
+.circle-3 {
+    background-color: var(--color-circle-3);
+}

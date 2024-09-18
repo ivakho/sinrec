@@ -1,0 +1,10 @@
+.schematic-circle {
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+
+    border: 2px dotted var(--color-schematic-circle);
+    border-radius: 50%;
+    background-color: #0006;
+}
