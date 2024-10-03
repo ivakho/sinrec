@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./CirclePage.css";
 import { useParams, useLocation } from "react-router-dom";
 import Content from "../../components/Content/Content";
 import SchematicCircle from "../../components/SchematicCircle/SchematicCircle";
 
-const CirclePage: React.FC = () => {
+const CirclePage = () => {
   const [topPixels, setTopPixels] = useState(0);
   const [leftPixels, setleftPixels] = useState(0);
 
